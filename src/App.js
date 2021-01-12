@@ -37,6 +37,7 @@ import BackupIcon from '@material-ui/icons/Backup';
 import GridOnIcon from '@material-ui/icons/GridOn';
 import FileCopyIcon from '@material-ui/icons/FileCopy';
 import HttpIcon from '@material-ui/icons/Http';
+import Table from "./components/Table/Table";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -170,6 +171,14 @@ function App() {
                 <ListItemText primary={"Common Service"} />
               </ListItem>
             </Link>
+            <Link to="/table" className={classes.link}>
+              <ListItem button>
+                <ListItemIcon>
+                  <HttpIcon />
+                </ListItemIcon>
+                <ListItemText primary={"Table"} />
+              </ListItem>
+            </Link>
           </List>
         </Drawer>
         <Switch>
@@ -184,6 +193,8 @@ function App() {
           <Route path="/service" component={CRUD} />
           <Route path="/session" component={Session} />
           <Route path="/redux" component={Redux} />
+          <Route path="/table" component={Table} />
+
 
         </Switch>
       </div>
