@@ -55,7 +55,7 @@ function App() {
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar>
         <Typography variant="h6" noWrap style={{paddingLeft: '400px'}}>
-          Morcoms POC
+          Sample POC
         </Typography>
       </Toolbar>
     </AppBar>
